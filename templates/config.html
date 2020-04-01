@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Config Difference</title>
+
+</head>
+<body>
+<p>Enter Device IP or Name to view the Config Difference</p>
+
+< method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <p><label >DeviceIP/Name: </label>
+    <input type="text" name="Device_1" placeholder="Device IP or Name..." class="form-control">
+    </p>
+    <p><label >DeviceIP/Name: </label>
+    <input type="text" name="Device_2" placeholder="Device IP or Name..." class="form-control" >
+    </p>
+    <p> <input class="btn submit_btn" type="submit" value="Submit">
+    </p>
+
+</form>
+
+</body>
+</html>
